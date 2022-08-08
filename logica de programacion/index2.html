@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<h1> Licencia de Conducir </h1>
+<br>
+<br>
+<script> 
+	function saltarlinea() {
+		// body...
+		document.write("<br>");
+	}
+
+	function imprimir(frase) {
+		// body...
+		document.write(frase);
+		saltarlinea();
+	}
+
+	var edad= parseInt(prompt("¿cual es tu edad? "));
+
+	if(edad>=18){
+
+		var tieneLicencia =prompt("¿Tienes licencia? responde s(si)/n (no): ");
+
+		if(tieneLicencia=='s' or 'S'){
+			imprimir("Puedes conducir");
+		}
+
+		else{
+			imprimir("No puedes conducir");
+		}
+	}
+
+	
+</script>

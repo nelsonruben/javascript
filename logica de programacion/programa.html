@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Programa</title>
+        
+    </head>
+    <body><!--etiquet body cuerpo de la pagina-->
+    	<p>estoy definiendo la edad de cristian</p>
+	</body>
+	<!-- bloque de JAVA SCRIPT-->
+	<script>
+		//declaracion de funcion
+		function salto() {
+			// body...
+			var saltar="<br>"
+			return saltar;
+		}
+		function saltarlinea(){
+
+			document.write("<br>");
+		}
+		function imprimir(mensaje){
+			document.write(mensaje)
+		}
+		// declaracion de varianbles
+		var anho=2935;
+		/*mostrar mensaje con document.write
+		codigo de html escrito en javascript  ventajas: codigo dinamico*/
+		imprimir("edad de cristian es... "+(anho-1992)+" años");
+		saltarlinea()
+		imprimir("nacio en "+1992);
+		var cont=2222;
+		promedio=(cont+anho)/2;
+		var nombre="laura";
+		imprimir("<br> tiene una hermana llamada "+ nombre);
+
+		imprimir("<br>promedio "+ promedio)
+		//asignar los valores que retorna la funcion salto a las variable a luego a b
+		a=salto();
+		b=salto();
+		//llamado a la funcion saltarlinea no necesita parametros
+		saltarlinea();
+
+		//Math.round  funcionpara redondear numeros
+		document.write(a+b+salto()+" promedio redeondeado "+ Math.round(promedio))
+
+	</script>
+</html>
